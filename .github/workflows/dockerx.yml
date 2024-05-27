@@ -1,14 +1,8 @@
 name: Docker Deployment
 
 on:
-  push:
-    branches:
-      - "release"
-
-  pull_request:
-    branches:
-      - "release"
-
+  workflow_dispatch
+  
 jobs:
   dockerx:
     runs-on: ubuntu-latest
